@@ -2,6 +2,51 @@ import { createContext } from "react";
 
 export const MyTeamContext = createContext(null);
 
+const img1 = <img src="./src/assets/Group 11.svg" alt="ava" />;
+const img2 = <img src="./src/assets/Group 12.svg" alt="ava" />;
+const img3 = <img src="./src/assets/Group 13.svg" alt="ava" />;
+
+const customObj = [
+  {
+    id: 1,
+    img: img1,
+    title: "Experienced Individuals",
+    about:
+      "Our network is made up of highly experienced professionals who are passionate about what they do.",
+  },
+  {
+    id: 2,
+    img: img2,
+    title: "Easy to Implement",
+    about:
+      "Our processes have been refined over years of implementation meaning our teams always deliver.",
+  },
+  {
+    id: 3,
+    img: img3,
+    title: "Enhanced Productivity",
+    about:
+      "Our customized platform with in-built analytics helps you manage your distributed teams.",
+  },
+];
+
+const vector = (
+  <svg
+    width="100"
+    height="200"
+    viewBox="0 0 100 200"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M0 200C-55.2285 200 -100 155.228 -100 100C-100 44.7715 -55.2285 0 0 0C55.2285 0 100 44.7715 100 100C100 155.228 55.2285 200 0 200ZM0 133C-18.2254 133 -33 118.225 -33 100C-33 81.7746 -18.2254 67 0 67C18.2254 67 33 81.7746 33 100C33 118.225 18.2254 133 0 133Z"
+      fill="#012F34"
+    />
+  </svg>
+);
+
 const svg = (
   <svg
     width="160"
@@ -18,8 +63,30 @@ const svg = (
     />
   </svg>
 );
+const dot = (
+  <img
+    className="absolute top-40 left-10 "
+    src="./src/assets/dot.svg"
+    alt="vector"
+  />
+);
+const blank = (
+  <img
+    className="absolute  top-28   z-[-1]"
+    src="./src/assets/Rectangle.svg"
+    alt="vector"
+  />
+);
+const vector2 = <img src="./src/assets/Group 7.svg" alt="vector" />;
 
-const contextValue = { svg };
+const contextValue = {
+  svg,
+  vector,
+  dot,
+  blank,
+  vector2,
+  customObj,
+};
 
 const MyTeamProvider = ({ children }) => {
   return (
