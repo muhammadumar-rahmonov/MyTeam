@@ -9,8 +9,12 @@ const Header = () => {
       <div className="flex gap-20">
         {svg}
         <div className="flex items-center gap-10">
-          <Link>Home</Link>
-          <Link>About</Link>
+          <Link className="hover:text-[#012F34]" to={"/"}>
+            Home
+          </Link>
+          <Link className="hover:text-[#012F34]" to={"/about"}>
+            About
+          </Link>
         </div>
       </div>
 

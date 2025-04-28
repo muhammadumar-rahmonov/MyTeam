@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MyTeamContext } from "../Context";
 
 const Section = () => {
-  const { customObj } = useContext(MyTeamContext);
+  const { customObj, img4 } = useContext(MyTeamContext);
 
   return (
     <section className="py-36 px-40 flex justify-between bg-[#012F34]">
@@ -12,9 +12,9 @@ const Section = () => {
           Build & manage distributed teams like no one else.
         </h1>
       </div>
-      <ul className="flex flex-col gap-8g">
+      <ul className="flex flex-col gap-8">
         {customObj.map((val) => (
-          <li className="flex gap-6  items-center">
+          <li key={val.id} className="flex gap-6  items-center">
             {val.img}
             <div className="w-[445px]">
               <span className="font-bold mb-4 text-lg text-[#f67e7e]">
@@ -25,6 +25,7 @@ const Section = () => {
           </li>
         ))}
       </ul>
+      {img4}
     </section>
   );
 };

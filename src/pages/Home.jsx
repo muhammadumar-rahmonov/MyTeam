@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Hero } from "../components";
 import { MyTeamContext } from "../Context";
-import { Section } from "../sections";
+import { FooterSection, Section, Section2 } from "../sections";
 
 const Home = () => {
   const { vector, vector2, dot, blank } = useContext(MyTeamContext);
@@ -13,6 +13,8 @@ const Home = () => {
       <Hero />
       <div className="ml-[1100px]"> {vector2}</div>
       <Section />
+      <Section2 />
+      <FooterSection />
     </main>
   );
 };

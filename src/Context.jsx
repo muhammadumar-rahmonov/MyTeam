@@ -5,6 +5,84 @@ export const MyTeamContext = createContext(null);
 const img1 = <img src="./src/assets/Group 11.svg" alt="ava" />;
 const img2 = <img src="./src/assets/Group 12.svg" alt="ava" />;
 const img3 = <img src="./src/assets/Group 13.svg" alt="ava" />;
+const img4 = (
+  <img
+    className="absolute right-0  top-290 "
+    src="./src/assets/group 8.svg"
+    alt="ava"
+  />
+);
+const img5 = (
+  <img
+    src="./src/assets/Oval@2x.png"
+    className="inline-block"
+    alt="ava"
+    width="62"
+    height="62"
+  />
+);
+const img6 = (
+  <img
+    src="./src/assets/Oval Copy 5.png"
+    className="inline-block"
+    alt="ava"
+    width="62"
+    height="62"
+  />
+);
+const img7 = (
+  <img
+    src="./src/assets/Oval Copy 6.png"
+    className="inline-block"
+    alt="ava"
+    width="62"
+    height="62"
+  />
+);
+
+const v = (
+  <svg
+    width="67"
+    height="56"
+    viewBox="0 0 67 56"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M26.4634 52.0327C23.6407 54.6776 19.9106 56 15.2732 56C10.535 56 6.80488 54.525 4.08293 51.5749C1.36098 48.6249 0 44.4541 0 39.0627C0 35.4005 0.85691 31.2298 2.57073 26.5504C4.28455 21.871 6.57805 17.1916 9.45122 12.5123C12.3244 7.83288 15.626 3.66213 19.3561 0H31C29.2862 4.06903 27.9756 7.78202 27.0683 11.139C26.161 14.4959 25.7073 17.5477 25.7073 20.2943C25.7073 23.4478 26.1106 26.1435 26.9171 28.3815C27.7236 30.6194 28.5553 32.8065 29.4122 34.9428C30.2691 37.079 30.6976 39.6222 30.6976 42.5722C30.6976 46.2343 29.2862 49.3878 26.4634 52.0327ZM62.4634 52.0327C59.6407 54.6776 55.9106 56 51.2732 56C46.535 56 42.8049 54.525 40.0829 51.5749C37.361 48.6249 36 44.4541 36 39.0627C36 35.4005 36.8569 31.2298 38.5707 26.5504C40.2846 21.871 42.578 17.1916 45.4512 12.5123C48.3244 7.83288 51.626 3.66213 55.3561 0H67C65.2862 4.06903 63.9756 7.78202 63.0683 11.139C62.161 14.4959 61.7073 17.5477 61.7073 20.2943C61.7073 23.4478 62.1106 26.1435 62.9171 28.3815C63.7236 30.6194 64.5553 32.8065 65.4122 34.9428C66.2691 37.079 66.6976 39.6222 66.6976 42.5722C66.6976 46.2343 65.2862 49.3878 62.4634 52.0327Z"
+      fill="#2C6269"
+    />
+  </svg>
+);
+
+const SocialSvg = (
+  <svg
+    width="104"
+    height="24"
+    viewBox="0 0 104 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+      fill="white"
+    />
+    <path
+      d="M52 0C45.373 0 40 5.372 40 12C40 17.084 43.163 21.426 47.627 23.174C47.522 22.225 47.427 20.769 47.669 19.733C47.887 18.796 49.076 13.768 49.076 13.768C49.076 13.768 48.717 13.049 48.717 11.986C48.717 10.318 49.684 9.072 50.888 9.072C51.911 9.072 52.406 9.841 52.406 10.762C52.406 11.791 51.751 13.33 51.412 14.757C51.129 15.951 52.011 16.926 53.189 16.926C55.322 16.926 56.961 14.677 56.961 11.431C56.961 8.558 54.897 6.549 51.949 6.549C48.535 6.549 46.531 9.11 46.531 11.756C46.531 12.787 46.928 13.894 47.424 14.494C47.522 14.613 47.536 14.718 47.507 14.839L47.174 16.199C47.121 16.419 47 16.466 46.772 16.36C45.273 15.662 44.336 13.471 44.336 11.711C44.336 7.926 47.086 4.449 52.265 4.449C56.428 4.449 59.663 7.416 59.663 11.38C59.663 15.516 57.056 18.844 53.436 18.844C52.22 18.844 51.077 18.213 50.686 17.466L49.938 20.319C49.667 21.362 48.936 22.669 48.446 23.465C49.57 23.812 50.763 24 52 24C58.627 24 64 18.627 64 12C64 5.372 58.627 0 52 0Z"
+      fill="white"
+    />
+    <path
+      d="M104 4.55699C103.117 4.94899 102.168 5.21299 101.172 5.33199C102.189 4.72299 102.97 3.75799 103.337 2.60799C102.386 3.17199 101.332 3.58199 100.21 3.80299C99.313 2.84599 98.032 2.24799 96.616 2.24799C93.437 2.24799 91.101 5.21399 91.819 8.29299C87.728 8.08799 84.1 6.12799 81.671 3.14899C80.381 5.36199 81.002 8.25699 83.194 9.72299C82.388 9.69699 81.628 9.47599 80.965 9.10699C80.911 11.388 82.546 13.522 84.914 13.997C84.221 14.185 83.462 14.229 82.69 14.081C83.316 16.037 85.134 17.46 87.29 17.5C85.22 19.123 82.612 19.848 80 19.54C82.179 20.937 84.768 21.752 87.548 21.752C96.69 21.752 101.855 14.031 101.543 7.10599C102.505 6.41099 103.34 5.54399 104 4.55699Z"
+      fill="white"
+    />
+  </svg>
+);
+
+const v2 = <img src="./src/assets/Group 8 (1).svg" alt="ava" />;
+const v3 = <img src="./src/assets/Group 8 Copy.svg" alt="ava" />;
+const v4 = <img src="./src/assets/Group 8 (2).svg" alt="ava" />;
 
 const customObj = [
   {
@@ -79,6 +157,36 @@ const blank = (
 );
 const vector2 = <img src="./src/assets/Group 7.svg" alt="vector" />;
 
+const customObj2 = [
+  {
+    id: 1,
+    about:
+      " “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”",
+    title: "Kady Baker",
+    name: "Product Manager at Bookmark",
+    img: img5,
+    v: v,
+  },
+  {
+    id: 2,
+    about:
+      "“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!” ",
+    title: "Aiysha Reese",
+    name: "Founder of Manage",
+    img: img6,
+    v: v,
+  },
+  {
+    id: 3,
+    about:
+      " “Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”",
+    title: "Arthur Clarke",
+    name: "Co-founder of MyPhysio",
+    img: img7,
+    v: v,
+  },
+];
+
 const contextValue = {
   svg,
   vector,
@@ -86,6 +194,12 @@ const contextValue = {
   blank,
   vector2,
   customObj,
+  img4,
+  customObj2,
+  v2,
+  v3,
+  v4,
+  SocialSvg,
 };
 
 const MyTeamProvider = ({ children }) => {
