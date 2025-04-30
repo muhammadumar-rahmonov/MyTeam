@@ -1,1 +1,155 @@
 @import "tailwindcss";
+@import "https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap";
+
+.bg-img {
+  background-image: url("./assets/Group 8.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.bg-img1 {
+  background: url("./assets/bg-img 1.svg"), url("./assets/Group 7.svg");
+  background-position: center left -110px, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+.dbg-img {
+  background: url("./assets/Group 8 Copy.svg"), url("./assets/Group 8 (1).svg");
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+.fbg-img {
+  background-image: url("./assets/Group 8 (5).svg");
+  background-position: left bottom -100px;
+  background-repeat: no-repeat;
+}
+
+.livvic-thin {
+  font-family: "Livvic", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.livvic-extralight {
+  font-family: "Livvic", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.livvic-light {
+  font-family: "Livvic", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.livvic-regular {
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.livvic-medium {
+  font-family: "Livvic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.livvic-semibold {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.livvic-bold {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.livvic-black {
+  font-family: "Livvic", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.livvic-thin-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.livvic-extralight-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.livvic-light-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.livvic-regular-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.livvic-medium-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.livvic-semibold-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.livvic-bold-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.livvic-black-italic {
+  font-family: "Livvic", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.flip-container {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-box {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-box.rotate-360 {
+  transform: rotateY(360deg); /* Ikki marta 180deg aylantirish */
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  background-color: #012f34;
+}
+
+.back {
+  background-color: #004047;
+  transform: rotateY(180deg);
+}

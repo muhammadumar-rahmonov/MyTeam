@@ -1,161 +1,69 @@
 import { createContext } from "react";
+import MYImg from "./assets/Group 11.svg";
+import MYImg2 from "./assets/Group 12.svg";
+import MYImg3 from "./assets/Group 13.svg";
+import MYImg4 from "./assets/Oval@2x.png";
+import MYImg5 from "./assets/Oval Copy 5.png";
+import MYImg6 from "./assets/Oval Copy 6.png";
+import MYImg9 from "./assets/Oval.png";
+import MYimg10 from "./assets/Oval (1).png";
+import MYimg11 from "./assets/Oval (2).png";
+import MYimg12 from "./assets/Oval (3).png";
+import MYimg13 from "./assets/Oval (4).png";
+import MYimg14 from "./assets/Oval (5).png";
+import MYimg15 from "./assets/Group 16.png";
+import { DeliveryVector, Social } from "./SVGs";
 
 export const MyTeamContext = createContext(null);
 
-const img1 = <img src="./src/assets/Group 11.svg" alt="ava" />;
-const img2 = <img src="./src/assets/Group 12.svg" alt="ava" />;
-const img3 = <img src="./src/assets/Group 13.svg" alt="ava" />;
-const img4 = (
-  <img
-    className="absolute right-0  top-290 "
-    src="./src/assets/group 8.svg"
-    alt="ava"
-  />
-);
+const MySVG = <DeliveryVector />;
+const MySocial = <Social />;
+
 const img5 = (
-  <img
-    src="./src/assets/Oval@2x.png"
-    className="inline-block"
-    alt="ava"
-    width="62"
-    height="62"
-  />
+  <img src={MYImg4} className="inline-block" alt="ava" width="62" height="62" />
 );
 const img6 = (
-  <img
-    src="./src/assets/Oval Copy 5.png"
-    className="inline-block"
-    alt="ava"
-    width="62"
-    height="62"
-  />
+  <img src={MYImg5} className="inline-block" alt="ava" width="62" height="62" />
 );
 const img7 = (
-  <img
-    src="./src/assets/Oval Copy 6.png"
-    className="inline-block"
-    alt="ava"
-    width="62"
-    height="62"
-  />
+  <img src={MYImg6} className="inline-block" alt="ava" width="62" height="62" />
 );
 
-const v = (
-  <svg
-    width="67"
-    height="56"
-    viewBox="0 0 67 56"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M26.4634 52.0327C23.6407 54.6776 19.9106 56 15.2732 56C10.535 56 6.80488 54.525 4.08293 51.5749C1.36098 48.6249 0 44.4541 0 39.0627C0 35.4005 0.85691 31.2298 2.57073 26.5504C4.28455 21.871 6.57805 17.1916 9.45122 12.5123C12.3244 7.83288 15.626 3.66213 19.3561 0H31C29.2862 4.06903 27.9756 7.78202 27.0683 11.139C26.161 14.4959 25.7073 17.5477 25.7073 20.2943C25.7073 23.4478 26.1106 26.1435 26.9171 28.3815C27.7236 30.6194 28.5553 32.8065 29.4122 34.9428C30.2691 37.079 30.6976 39.6222 30.6976 42.5722C30.6976 46.2343 29.2862 49.3878 26.4634 52.0327ZM62.4634 52.0327C59.6407 54.6776 55.9106 56 51.2732 56C46.535 56 42.8049 54.525 40.0829 51.5749C37.361 48.6249 36 44.4541 36 39.0627C36 35.4005 36.8569 31.2298 38.5707 26.5504C40.2846 21.871 42.578 17.1916 45.4512 12.5123C48.3244 7.83288 51.626 3.66213 55.3561 0H67C65.2862 4.06903 63.9756 7.78202 63.0683 11.139C62.161 14.4959 61.7073 17.5477 61.7073 20.2943C61.7073 23.4478 62.1106 26.1435 62.9171 28.3815C63.7236 30.6194 64.5553 32.8065 65.4122 34.9428C66.2691 37.079 66.6976 39.6222 66.6976 42.5722C66.6976 46.2343 65.2862 49.3878 62.4634 52.0327Z"
-      fill="#2C6269"
-    />
-  </svg>
-);
-
-const SocialSvg = (
-  <svg
-    width="104"
-    height="24"
-    viewBox="0 0 104 24"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
-      fill="white"
-    />
-    <path
-      d="M52 0C45.373 0 40 5.372 40 12C40 17.084 43.163 21.426 47.627 23.174C47.522 22.225 47.427 20.769 47.669 19.733C47.887 18.796 49.076 13.768 49.076 13.768C49.076 13.768 48.717 13.049 48.717 11.986C48.717 10.318 49.684 9.072 50.888 9.072C51.911 9.072 52.406 9.841 52.406 10.762C52.406 11.791 51.751 13.33 51.412 14.757C51.129 15.951 52.011 16.926 53.189 16.926C55.322 16.926 56.961 14.677 56.961 11.431C56.961 8.558 54.897 6.549 51.949 6.549C48.535 6.549 46.531 9.11 46.531 11.756C46.531 12.787 46.928 13.894 47.424 14.494C47.522 14.613 47.536 14.718 47.507 14.839L47.174 16.199C47.121 16.419 47 16.466 46.772 16.36C45.273 15.662 44.336 13.471 44.336 11.711C44.336 7.926 47.086 4.449 52.265 4.449C56.428 4.449 59.663 7.416 59.663 11.38C59.663 15.516 57.056 18.844 53.436 18.844C52.22 18.844 51.077 18.213 50.686 17.466L49.938 20.319C49.667 21.362 48.936 22.669 48.446 23.465C49.57 23.812 50.763 24 52 24C58.627 24 64 18.627 64 12C64 5.372 58.627 0 52 0Z"
-      fill="white"
-    />
-    <path
-      d="M104 4.55699C103.117 4.94899 102.168 5.21299 101.172 5.33199C102.189 4.72299 102.97 3.75799 103.337 2.60799C102.386 3.17199 101.332 3.58199 100.21 3.80299C99.313 2.84599 98.032 2.24799 96.616 2.24799C93.437 2.24799 91.101 5.21399 91.819 8.29299C87.728 8.08799 84.1 6.12799 81.671 3.14899C80.381 5.36199 81.002 8.25699 83.194 9.72299C82.388 9.69699 81.628 9.47599 80.965 9.10699C80.911 11.388 82.546 13.522 84.914 13.997C84.221 14.185 83.462 14.229 82.69 14.081C83.316 16.037 85.134 17.46 87.29 17.5C85.22 19.123 82.612 19.848 80 19.54C82.179 20.937 84.768 21.752 87.548 21.752C96.69 21.752 101.855 14.031 101.543 7.10599C102.505 6.41099 103.34 5.54399 104 4.55699Z"
-      fill="white"
-    />
-  </svg>
-);
+const MYIMG = <img src={MYImg9} alt="ava" />;
+const MYIMG2 = <img src={MYimg10} alt="ava" />;
+const MYIMG3 = <img src={MYimg11} alt="ava" />;
+const MYIMG4 = <img src={MYimg12} alt="ava" />;
+const MYIMG5 = <img src={MYimg13} alt="ava" />;
+const MYIMG6 = <img src={MYimg14} alt="ava" />;
+const MYIMG7 = <img className="mb-9" src={MYimg15} alt="icon" />;
 
 const v2 = <img src="./src/assets/Group 8 (1).svg" alt="ava" />;
-const v3 = <img src="./src/assets/Group 8 Copy.svg" alt="ava" />;
-const v4 = <img src="./src/assets/Group 8 (2).svg" alt="ava" />;
+
+const v5 = <img src="./src/assets/Group 8 (3).svg" alt="ava" />;
 
 const customObj = [
   {
     id: 1,
-    img: img1,
+    img: MYImg,
     title: "Experienced Individuals",
     about:
       "Our network is made up of highly experienced professionals who are passionate about what they do.",
   },
   {
     id: 2,
-    img: img2,
+    img: MYImg2,
     title: "Easy to Implement",
     about:
       "Our processes have been refined over years of implementation meaning our teams always deliver.",
   },
   {
     id: 3,
-    img: img3,
+    img: MYImg3,
     title: "Enhanced Productivity",
     about:
       "Our customized platform with in-built analytics helps you manage your distributed teams.",
   },
 ];
-
-const vector = (
-  <svg
-    width="100"
-    height="200"
-    viewBox="0 0 100 200"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M0 200C-55.2285 200 -100 155.228 -100 100C-100 44.7715 -55.2285 0 0 0C55.2285 0 100 44.7715 100 100C100 155.228 55.2285 200 0 200ZM0 133C-18.2254 133 -33 118.225 -33 100C-33 81.7746 -18.2254 67 0 67C18.2254 67 33 81.7746 33 100C33 118.225 18.2254 133 0 133Z"
-      fill="#012F34"
-    />
-  </svg>
-);
-
-const svg = (
-  <svg
-    width="160"
-    height="40"
-    viewBox="0 0 160 40"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M68.3174 29.5312V13.2143H72.6997V8.19196H68.3174V0H62.1474V8.19196H58.3538V13.2143H62.1474V29.5312H68.3174ZM6.21366 18.2366V29.5312H0V8.19196H6.21366V11.2946C6.72238 10.1935 7.44913 9.32292 8.3939 8.68304C9.41134 8.07292 10.5015 7.76786 11.6642 7.76786C14.9637 7.76786 17.1948 9.01786 18.3576 11.5179C19.8837 8.9881 21.9549 7.72321 24.5712 7.72321C27.1875 7.72321 29.186 8.56399 30.5669 10.2455C31.9477 11.9271 32.6381 14.3155 32.6381 17.4107V29.5312H26.4898V18.1473C26.4898 16.8378 26.1773 15.8036 25.5523 15.0446C24.8983 14.2857 24.0407 13.9062 22.9797 13.9062C21.9186 13.9062 21.0683 14.2634 20.4288 14.9777C19.7892 15.692 19.4695 16.7783 19.4695 18.2366V29.5312H13.2558V18.0134C13.1977 16.7336 12.8561 15.7292 12.2311 15C11.5916 14.2708 10.7631 13.9062 9.74564 13.9062C8.7282 13.9062 7.88517 14.256 7.21657 14.9554C6.54797 15.6548 6.21366 16.7485 6.21366 18.2366ZM57.4981 8.19196L44.6347 40H38.0722L43.0868 27.3438L35.0417 8.19196H41.6478L46.2481 20.2902L50.892 8.19196H57.4981ZM95.2923 25.6473C93.3591 28.5491 90.1833 29.9926 85.7646 29.9777C82.6978 29.9777 80.1106 28.9435 78.003 26.875C75.9245 24.7768 74.8853 22.0833 74.8853 18.7946C74.8853 15.506 75.9245 12.8348 78.003 10.7812C80.0815 8.72768 82.6542 7.70833 85.721 7.72321C88.7879 7.72321 91.3388 8.76488 93.3737 10.8482C95.4085 12.9315 96.4333 15.6399 96.4478 18.9732C96.4478 19.003 96.4187 19.6577 96.3606 20.9375H81.0771C81.1934 22.0685 81.7603 22.9464 82.7777 23.5714C83.7952 24.1964 84.9434 24.5089 86.2225 24.5089C88.2138 24.5089 89.7327 23.8393 90.7792 22.5L95.2923 25.6473ZM90.1905 16.9643H81.1644C81.3969 15.8036 81.9783 14.8958 82.9085 14.2411C83.8097 13.5863 84.7835 13.2738 85.83 13.3036C86.8766 13.3333 87.8286 13.6607 88.6862 14.2857C89.5437 14.9107 90.0452 15.8036 90.1905 16.9643ZM113.088 29.2188C111.911 29.7247 110.785 29.9628 109.709 29.933C106.846 29.933 104.36 28.9062 102.253 26.8527C100.145 24.7991 99.0912 22.128 99.0912 18.8393C99.0912 15.5506 100.181 12.8795 102.362 10.8259C104.542 8.77232 106.991 7.7381 109.709 7.72321C110.814 7.72321 111.947 7.96875 113.11 8.45982C114.273 8.95089 115.167 9.6503 115.792 10.558V8.19196H121.94V29.5312H115.792V27.0982C115.167 28.006 114.266 28.7128 113.088 29.2188ZM110.712 23.9062C109.302 23.9062 108.088 23.4301 107.071 22.4777C106.024 21.5253 105.501 20.3199 105.501 18.8616C105.501 17.4182 106.024 16.2054 107.071 15.2232C108.205 14.256 109.447 13.7723 110.799 13.7723C112.151 13.7723 113.321 14.2485 114.309 15.2009C115.298 16.1533 115.792 17.3735 115.792 18.8616C115.792 20.3497 115.298 21.5625 114.309 22.5C113.321 23.4375 112.122 23.9062 110.712 23.9062ZM133.522 18.2366V29.5312H127.309V8.19196H133.522V11.2946C134.031 10.1935 134.758 9.32292 135.703 8.68304C136.72 8.07292 137.81 7.76786 138.973 7.76786C142.272 7.76786 144.504 9.01786 145.666 11.5179C147.193 8.9881 149.264 7.72321 151.88 7.72321C154.496 7.72321 156.495 8.56399 157.876 10.2455C159.256 11.9271 159.947 14.3155 159.947 17.4107V29.5312H153.799V18.1473C153.799 16.8378 153.486 15.8036 152.861 15.0446C152.207 14.2857 151.35 13.9062 150.288 13.9062C149.227 13.9062 148.377 14.2634 147.738 14.9777C147.098 15.692 146.778 16.7783 146.778 18.2366V29.5312H140.565V18.0134C140.506 16.7336 140.165 15.7292 139.54 15C138.9 14.2708 138.072 13.9062 137.054 13.9062C136.037 13.9062 135.194 14.256 134.525 14.9554C133.857 15.6548 133.522 16.7485 133.522 18.2366Z"
-      fill="white"
-    />
-  </svg>
-);
-const dot = (
-  <img
-    className="absolute top-40 left-10 "
-    src="./src/assets/dot.svg"
-    alt="vector"
-  />
-);
-const blank = (
-  <img
-    className="absolute  top-28   z-[-1]"
-    src="./src/assets/Rectangle.svg"
-    alt="vector"
-  />
-);
-const vector2 = <img src="./src/assets/Group 7.svg" alt="vector" />;
 
 const customObj2 = [
   {
@@ -165,7 +73,7 @@ const customObj2 = [
     title: "Kady Baker",
     name: "Product Manager at Bookmark",
     img: img5,
-    v: v,
+    v: MySVG,
   },
   {
     id: 2,
@@ -174,7 +82,7 @@ const customObj2 = [
     title: "Aiysha Reese",
     name: "Founder of Manage",
     img: img6,
-    v: v,
+    v: MySVG,
   },
   {
     id: 3,
@@ -183,23 +91,74 @@ const customObj2 = [
     title: "Arthur Clarke",
     name: "Co-founder of MyPhysio",
     img: img7,
-    v: v,
+    v: MySVG,
   },
 ];
 
+const btnSvg = (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M10 0H6V6H0V10H6V16H10V10H16V6H10V0Z"
+      fill="#012F34"
+    />
+  </svg>
+);
+
+const boxes = [
+  {
+    id: 1,
+    img: MYIMG,
+    title: "Nikita Marks",
+    name: "Founder & CEO",
+  },
+  {
+    id: 2,
+    img: MYIMG2,
+    title: "Cristian Duncan",
+    name: "Co-founder & COO",
+  },
+  {
+    id: 3,
+    img: MYIMG3,
+    title: "Cruz Hamer",
+    name: "Co-founder & CTO",
+  },
+  {
+    id: 4,
+    img: MYIMG4,
+    title: "Drake Heaton",
+    name: "Business Development Lead",
+  },
+  {
+    id: 5,
+    img: MYIMG5,
+    title: "Griffin Wise",
+    name: "Lead Marketing",
+  },
+  {
+    id: 6,
+    img: MYIMG6,
+    title: "Aden Allan",
+    name: "Head of Talent",
+  },
+];
 const contextValue = {
-  svg,
-  vector,
-  dot,
-  blank,
-  vector2,
   customObj,
-  img4,
   customObj2,
   v2,
-  v3,
-  v4,
-  SocialSvg,
+  v5,
+  MySocial,
+  boxes,
+  btnSvg,
+  MYIMG7,
 };
 
 const MyTeamProvider = ({ children }) => {
