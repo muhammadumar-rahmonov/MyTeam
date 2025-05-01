@@ -10,7 +10,7 @@ const Box = ({ val, btnSvg }) => {
   return (
     <div>
       <div
-        className={`transition-transform duration-500 ease-in-out transform ${
+        className={`  transition-transform duration-500 ease-in-out transform ${
           showBack ? "rotate-y-360" : ""
         }`}
       >

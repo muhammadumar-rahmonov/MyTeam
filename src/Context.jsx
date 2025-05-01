@@ -1,4 +1,6 @@
 import { createContext } from "react";
+export const MyTeamContext = createContext(null);
+
 import MYImg from "./assets/Group 11.svg";
 import MYImg2 from "./assets/Group 12.svg";
 import MYImg3 from "./assets/Group 13.svg";
@@ -12,12 +14,16 @@ import MYimg12 from "./assets/Oval (3).png";
 import MYimg13 from "./assets/Oval (4).png";
 import MYimg14 from "./assets/Oval (5).png";
 import MYimg15 from "./assets/Group 16.png";
-import { DeliveryVector, Social } from "./SVGs";
-
-export const MyTeamContext = createContext(null);
+import { DeliveryVector, HeaderSVG, Social } from "./SVGs";
+import MYimg16 from "./assets/Object.svg";
+import MYimg17 from "./assets/jakarta.svg";
+import MYimg18 from "./assets/Object.svg";
+import MYimg19 from "./assets/Object (1).svg";
+import MYimg20 from "./assets/gadgets-now.svg";
 
 const MySVG = <DeliveryVector />;
 const MySocial = <Social />;
+const svg = <HeaderSVG />;
 
 const img5 = (
   <img src={MYImg4} className="inline-block" alt="ava" width="62" height="62" />
@@ -36,10 +42,13 @@ const MYIMG4 = <img src={MYimg12} alt="ava" />;
 const MYIMG5 = <img src={MYimg13} alt="ava" />;
 const MYIMG6 = <img src={MYimg14} alt="ava" />;
 const MYIMG7 = <img className="mb-9" src={MYimg15} alt="icon" />;
+const MYIMG8 = <img src={MYimg16} alt="text-svg" />;
+const MYIMG9 = <img src={MYimg17} alt="text-svg" />;
+const MYIMG10 = <img src={MYimg18} alt="text-svg" />;
+const MYIMG11 = <img src={MYimg19} alt="text-svg" />;
+const MYIMG12 = <img src={MYimg20} alt="text-svg" />;
 
 const v2 = <img src="./src/assets/Group 8 (1).svg" alt="ava" />;
-
-const v5 = <img src="./src/assets/Group 8 (3).svg" alt="ava" />;
 
 const customObj = [
   {
@@ -150,15 +159,57 @@ const boxes = [
     name: "Head of Talent",
   },
 ];
+const TextSVGs = [
+  {
+    id: 1,
+    img: MYIMG8,
+  },
+  {
+    id: 2,
+    img: MYIMG9,
+  },
+  {
+    id: 3,
+    img: MYIMG10,
+  },
+  {
+    id: 4,
+    img: MYIMG11,
+  },
+  {
+    id: 5,
+    img: MYIMG12,
+  },
+];
+
+const ContactObj = [
+  {
+    id: 1,
+    img: MYImg,
+    title: "The quality of our talent network",
+  },
+  {
+    id: 2,
+    img: MYImg2,
+    title: "Usage & implementation of our software",
+  },
+  {
+    id: 3,
+    img: MYImg3,
+    title: "How we help drive innovation",
+  },
+];
+
 const contextValue = {
+  svg,
   customObj,
   customObj2,
   v2,
-  v5,
   MySocial,
   boxes,
   btnSvg,
   MYIMG7,
+  TextSVGs,
 };
 
 const MyTeamProvider = ({ children }) => {

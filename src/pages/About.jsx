@@ -1,14 +1,15 @@
 import React from "react";
-import { Ahero, Ready } from "../components";
+import { Ahero, Clients, Ready } from "../components";
 import Meet from "../components/Meet";
 
 const About = () => {
   return (
-    <section>
+    <main>
       <Ahero />
       <Meet />
+      <Clients />
       <Ready />
-    </section>
+    </main>
   );
 };
 

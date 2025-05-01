@@ -5,7 +5,7 @@ import Box from "./Box";
 const Meet = () => {
   const { boxes, btnSvg } = useContext(MyTeamContext);
   return (
-    <section className="bg-[#004047] p-20 ">
+    <section className="bg-[#004047]  mbg-img p-20 ">
       <h2 className="font-bold text-5xl text-center mb-[64px]">
         Meet the directors
       </h2>

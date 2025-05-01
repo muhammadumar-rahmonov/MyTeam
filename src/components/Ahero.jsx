@@ -1,10 +1,6 @@
-import React, { useContext } from "react";
-import { MyTeamContext } from "../Context";
-
 const Ahero = () => {
-  const { v5 } = useContext(MyTeamContext);
   return (
-    <section className="py-[120px] px-[165px] flex items-start justify-between relative">
+    <section className="py-[120px] abg-img  px-[165px] flex items-start justify-between relative">
       <div className="gap-5">
         <h1 className="font-bold text-6xl">About</h1>
       </div>
@@ -17,7 +13,6 @@ const Ahero = () => {
           products and experiences. We’ll bring those teams to you.
         </p>
       </div>
-      <div className="absolute right-0 bottom-0">{v5}</div>
     </section>
   );
 };

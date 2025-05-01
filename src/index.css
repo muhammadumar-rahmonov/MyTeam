@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import "https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap";
+@import "tailwindcss";
 
 .bg-img {
   background-image: url("./assets/Group 8.svg");
@@ -19,6 +19,28 @@
 .fbg-img {
   background-image: url("./assets/Group 8 (5).svg");
   background-position: left bottom -100px;
+  background-repeat: no-repeat;
+}
+.abg-img {
+  background-image: url("./assets/Group 8 (6).svg");
+  background-position: right -100px bottom;
+  background-repeat: no-repeat;
+}
+.mbg-img {
+  background-image: url("./assets/Group 8 (7).svg"),
+    url("./assets/Group 8 Copy (1).svg");
+  background-position: left -100px top, right bottom;
+  background-repeat: no-repeat;
+}
+.sbg-img {
+  background-image: url("./assets/clients-bg.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+.cbg-img {
+  background-image: url("./assets/Group 8 (7).svg"),
+    url("./assets/Group 7 (1).svg");
+  background-position: top 115px left -110px, right -100px bottom;
   background-repeat: no-repeat;
 }
 

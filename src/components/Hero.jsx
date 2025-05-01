@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className=" bg-img1 bg-img3 py-[250px] px-[165px] ">
+    <section className=" bg-img1  py-[250px] px-[165px] ">
       <div className="flex justify-between items-center w-[1110px]">
         <h1 className=" text-[100px] leading-[100%]  w-[550px]  livvic-bold">
           Find the best <span className=" text-[#f67e7e]">talent</span>

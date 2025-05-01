@@ -6,3 +6,5 @@ export { default as Services } from "./Services";
 export { default as Delivering } from "./Delivering";
 export { default as Ready } from "./Ready";
 export { default as Box } from "./Box";
+export { default as Clients } from "./Clients";
+export { default as ContactRight } from "./ContactRight";
