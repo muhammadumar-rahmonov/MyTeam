@@ -16,10 +16,10 @@ const Header = () => {
       <div className="flex gap-8 md:gap-20 items-center">
         {svg}
         <nav className="header-content gap-6 md:gap-10 items-center">
-          <Link className="hover:text-[#F67E7E]" to={"/"}>
+          <Link className="hover:text-[#F67E7E] duration-300" to={"/"}>
             Home
           </Link>
-          <Link className="hover:text-[#F67E7E]" to={"/about"}>
+          <Link className="hover:text-[#F67E7E] duration-300" to={"/about"}>
             About
           </Link>
         </nav>
@@ -35,7 +35,7 @@ const Header = () => {
       <HSideBar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
       <Link
-        className="contact-btn border-2 rounded-full py-2 px-4 hover:bg-white hover:text-[#014E56] cursor-pointer border-white"
+        className="contact-btn border-2 rounded-full py-2 px-8 hover:bg-white hover:text-[#014E56] cursor-pointer border-white duration-300"
         to={"/contact"}
       >
         Contact Us

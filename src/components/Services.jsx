@@ -6,7 +6,7 @@ const Services = () => {
 
   return (
     <section className="service-section bg-img  bg-[#012F34]">
-      <div className="service-content ">
+      <div className="service-content flex">
         <div className=" relative">
           <span className="w-12 h-1 absolute -top-10 left-0 bg-[#f67e7e] "></span>
           <h1 className="livvic-bold service-h1 w-[445px]">
@@ -15,7 +15,7 @@ const Services = () => {
         </div>
         <ul className="flex flex-col gap-8">
           {customObj.map((val) => (
-            <li key={val.id} className="li">
+            <li key={val.id} className="li flex">
               <img
                 className="w-full max-w-[72px] h-auto object-cover mx-aut0"
                 src={val.img}
@@ -25,7 +25,7 @@ const Services = () => {
                 <span className="font-bold mb-5 text-lg text-[#f67e7e]">
                   {val.title}
                 </span>
-                <p className="font-semibold opacity-80 text-base p">
+                <p className="font-semibold services-list opacity-80 text-base px">
                   {val.about}
                 </p>
               </div>
