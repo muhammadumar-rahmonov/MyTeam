@@ -1,28 +1,44 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { MyTeamContext } from "../Context";
 
+import HSideBar from "./HSideBar";
+import { BtnSVG } from "../SVGs";
+
 const Header = () => {
   const { svg } = useContext(MyTeamContext);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
+
   return (
-    <header className="text-white flex items-center justify-between p-20">
-      <div className="flex gap-20">
+    <header className="text-white flex items-center justify-between responsive-header">
+      <div className="flex gap-8 md:gap-20 items-center">
         {svg}
-        <div className="flex items-center gap-10">
+        <nav className="header-content gap-6 md:gap-10 items-center">
           <Link className="hover:text-[#F67E7E]" to={"/"}>
             Home
           </Link>
           <Link className="hover:text-[#F67E7E]" to={"/about"}>
             About
           </Link>
-        </div>
+        </nav>
       </div>
 
+      <button
+        onClick={toggleSidebar}
+        className="mobile:block sidebar-toggle desktop:hidden tablet:hidden z-30"
+      >
+        <BtnSVG />
+      </button>
+
+      <HSideBar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+
       <Link
-        className="border-2 rounded-full py-2 px-3 hover:bg-white hover:text-[#014E56] cursor-pointer border-white"
+        className="contact-btn border-2 rounded-full py-2 px-4 hover:bg-white hover:text-[#014E56] cursor-pointer border-white"
         to={"/contact"}
       >
-        contact us
+        Contact Us
       </Link>
     </header>
   );

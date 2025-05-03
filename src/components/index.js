@@ -8,3 +8,6 @@ export { default as Ready } from "./Ready";
 export { default as Box } from "./Box";
 export { default as Clients } from "./Clients";
 export { default as ContactRight } from "./ContactRight";
+export { default as ContactLeft } from "./ContactLeft";
+
+export { default as HSideBar } from "./HSideBar";

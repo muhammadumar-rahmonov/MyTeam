@@ -5,23 +5,29 @@ const Services = () => {
   const { customObj } = useContext(MyTeamContext);
 
   return (
-    <section className="py-[140px] px-[165px]  bg-img  bg-[#012F34]">
-      <div className="flex justify-between  w-[1110px]">
+    <section className="service-section bg-img  bg-[#012F34]">
+      <div className="service-content ">
         <div className=" relative">
           <span className="w-12 h-1 absolute -top-10 left-0 bg-[#f67e7e] "></span>
-          <h1 className="font-bold text-5xl w-[445px]">
+          <h1 className="livvic-bold service-h1 w-[445px]">
             Build & manage distributed teams like no one else.
           </h1>
         </div>
         <ul className="flex flex-col gap-8">
           {customObj.map((val) => (
-            <li key={val.id} className="flex gap-6  items-center">
-              <img src={val.img} alt="Avatar icon" />
-              <div className="w-[445px]">
+            <li key={val.id} className="li">
+              <img
+                className="w-full max-w-[72px] h-auto object-cover mx-aut0"
+                src={val.img}
+                alt="Avatar icon"
+              />
+              <div className="max-w-full">
                 <span className="font-bold mb-5 text-lg text-[#f67e7e]">
                   {val.title}
                 </span>
-                <p className="font-semibold text-base w-[445px]">{val.about}</p>
+                <p className="font-semibold opacity-80 text-base p">
+                  {val.about}
+                </p>
               </div>
             </li>
           ))}

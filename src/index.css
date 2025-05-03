@@ -6,10 +6,24 @@
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+@media (max-width: 770px) {
+  .bg-img {
+    background-image: url("./assets/Group 8.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
 .bg-img1 {
   background: url("./assets/bg-img 1.svg"), url("./assets/Group 7.svg");
   background-position: center left -110px, right bottom;
   background-repeat: no-repeat, no-repeat;
+}
+@media (max-width: 770px) {
+  .bg-img1 {
+    background: url("./assets/Group 7.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
 }
 .dbg-img {
   background: url("./assets/Group 8 Copy.svg"), url("./assets/Group 8 (1).svg");
@@ -42,6 +56,218 @@
     url("./assets/Group 7 (1).svg");
   background-position: top 115px left -110px, right -100px bottom;
   background-repeat: no-repeat;
+}
+
+.responsive-header {
+  padding: 5rem;
+}
+@media (max-width: 770px) {
+  .responsive-header {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 520px) {
+  .responsive-header {
+    padding: 1.7rem;
+  }
+}
+
+.header-content {
+  display: flex;
+}
+@media (max-width: 520px) {
+  .header-content {
+    display: none;
+  }
+}
+
+.sidebar-toggle {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .sidebar-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 30;
+  }
+}
+.contact-btn {
+  display: inline-block;
+}
+@media (max-width: 520px) {
+  .contact-btn {
+    display: none;
+  }
+}
+.hero-section {
+  padding: 250px 165px;
+}
+@media (max-width: 770px) {
+  .hero-section {
+    padding: 225px 40px;
+  }
+}
+@media (max-width: 520px) {
+  .hero-section {
+    padding: 160px 24px;
+  }
+}
+.content {
+  width: 1110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 770px) {
+  .content {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 520px) {
+  .content {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.responsive-h1 {
+  width: 550px;
+  font-size: 100px;
+  line-height: 100px;
+}
+@media (max-width: 770px) {
+  .responsive-h1 {
+    width: 390px;
+    font-size: 64px;
+    line-height: 54px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 520px) {
+  .responsive-h1 {
+    width: 230px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+}
+.span {
+  display: block;
+}
+@media (max-width: 770px) {
+  .span {
+    display: none;
+  }
+}
+.p-content {
+  width: 445px;
+}
+@media (max-width: 770px) {
+  .p-content {
+    width: 457px;
+  }
+}
+@media (max-width: 520px) {
+  .p-content {
+    width: 327px;
+  }
+}
+.p {
+  font-size: 18px;
+  line-height: 28px;
+}
+@media (max-width: 770px) {
+  .p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+.service-section {
+  padding: 140px 165px;
+}
+@media (max-width: 770px) {
+  .service-section {
+    padding: 100px 97px;
+  }
+}
+@media (max-width: 520px) {
+  .service-section {
+    padding: 64px 24px;
+  }
+}
+.service-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+}
+@media (max-width: 770px) {
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    width: 573px;
+  }
+}
+@media (max-width: 520px) {
+  .service-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+  }
+}
+
+.service-h1 {
+  font-size: 48px;
+  line-height: 48px;
+}
+@media (max-width: 770px) {
+  .service-h1 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+  }
+}
+@media (max-width: 520px) {
+  .service-h1 {
+    width: 250px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 56px;
+  }
+}
+.li {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+@media (max-width: 520px) {
+  .li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+.p {
+  width: 480px;
+}
+@media (max-width: 520px) {
+  .p {
+    width: 350px;
+  }
 }
 
 .livvic-thin {
