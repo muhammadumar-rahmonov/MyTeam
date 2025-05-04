@@ -15,7 +15,7 @@ const Box = ({ val, btnSvg }) => {
         }`}
       >
         {!showBack ? (
-          <li className="py-8 px-6 bg-[#012F34] transform hover:scale-110 transition-all duration-300  relative flex flex-col items-center mb-[76px] max-w-[350px]">
+          <li className="meet-li bg-[#012F34] transform hover:scale-110 transition-all duration-300  relative flex flex-col items-center ">
             <div className="mb-4">{val.img}</div>
             <div className="mb-7">
               <h4 className="livvic-bold text-lg text-center text-[#79c8c7]">
@@ -33,7 +33,7 @@ const Box = ({ val, btnSvg }) => {
             </button>
           </li>
         ) : (
-          <li className="py-8 px-6 bg-[#012F34] transform hover:scale-110 transition-all duration-300  flex flex-col relative items-center max-w-[350px] mb-[76px] text-white">
+          <li className="meet-li bg-[#012F34] transform hover:scale-110 transition-all duration-300  flex flex-col relative items-center  text-white">
             <h4 className="livvic-bold text-lg text-center text-[#79c8c7] mb-2">
               {val.title}
             </h4>

@@ -48,7 +48,7 @@ const ContactLeft = () => {
   };
 
   return (
-    <section className="flex items-center justify-center w-[542px] ">
+    <section className="flex items-center justify-center contact-left">
       <form onSubmit={handleSubmit} className="w-full max-w-[540px] space-y-6">
         <div>
           <input

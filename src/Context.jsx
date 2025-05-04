@@ -15,7 +15,7 @@ import MYimg13 from "./assets/Oval (4).png";
 import MYimg14 from "./assets/Oval (5).png";
 import MYimg15 from "./assets/Group 16.png";
 import { DeliveryVector, HeaderSVG, Social } from "./SVGs";
-import MYimg16 from "./assets/Object.svg";
+import MYimg16 from "./assets/Object (2).svg";
 import MYimg17 from "./assets/jakarta.svg";
 import MYimg18 from "./assets/Object.svg";
 import MYimg19 from "./assets/Object (1).svg";
@@ -42,11 +42,11 @@ const MYIMG4 = <img src={MYimg12} alt="ava" />;
 const MYIMG5 = <img src={MYimg13} alt="ava" />;
 const MYIMG6 = <img src={MYimg14} alt="ava" />;
 const MYIMG7 = <img className="mb-9" src={MYimg15} alt="icon" />;
-const MYIMG8 = <img src={MYimg16} alt="text-svg" />;
-const MYIMG9 = <img src={MYimg17} alt="text-svg" />;
-const MYIMG10 = <img src={MYimg18} alt="text-svg" />;
-const MYIMG11 = <img src={MYimg19} alt="text-svg" />;
-const MYIMG12 = <img src={MYimg20} alt="text-svg" />;
+const MYIMG8 = <img className="responsive-img" src={MYimg16} alt="text-svg" />;
+const MYIMG9 = <img className="responsive-img" src={MYimg17} alt="text-svg" />;
+const MYIMG10 = <img className="responsive-img" src={MYimg18} alt="text-svg" />;
+const MYIMG11 = <img className="responsive-img" src={MYimg19} alt="text-svg" />;
+const MYIMG12 = <img className="responsive-img" src={MYimg20} alt="text-svg" />;
 
 const v2 = <img src="./src/assets/Group 8 (1).svg" alt="ava" />;
 
@@ -179,24 +179,6 @@ const TextSVGs = [
   {
     id: 5,
     img: MYIMG12,
-  },
-];
-
-const ContactObj = [
-  {
-    id: 1,
-    img: MYImg,
-    title: "The quality of our talent network",
-  },
-  {
-    id: 2,
-    img: MYImg2,
-    title: "Usage & implementation of our software",
-  },
-  {
-    id: 3,
-    img: MYImg3,
-    title: "How we help drive innovation",
   },
 ];
 

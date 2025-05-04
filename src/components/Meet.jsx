@@ -5,11 +5,9 @@ import Box from "./Box";
 const Meet = () => {
   const { boxes, btnSvg } = useContext(MyTeamContext);
   return (
-    <section className="bg-[#004047]  mbg-img p-20 ">
-      <h2 className="font-bold text-5xl text-center mb-[64px]">
-        Meet the directors
-      </h2>
-      <ul className="grid grid-cols-3 gap-4 justify-between w-full ">
+    <section className="bg-[#004047]  mbg-img meet-section ">
+      <h2 className="livvic-bold meet-h1 text-center">Meet the directors</h2>
+      <ul className="grid  gap-x-8 gap-y-12  meet-ul">
         {boxes.map((val) => (
           <Box key={val.id} val={val} btnSvg={btnSvg} />
         ))}

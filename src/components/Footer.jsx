@@ -9,9 +9,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#002529] flex footer-section">
-      <div className="flex footer-top">
+      <div className="flex  footer-top">
         <div className="flex flex-col ">
-          <div className="mb-6">{svg}</div>
+          <div className="svg-content">{svg}</div>
           <div className="flex items-center  gap-10">
             <Link
               className="text-white hover:text-[#F67E7E] transition-colors duration-300"
@@ -48,8 +48,8 @@ const Footer = () => {
             <Twitter />
           </button>
         </div>
-        <div className="mt-8">
-          <p className="font-semibold text-base opacity-60">
+        <div>
+          <p className="livvic-semibold text-base opacity-60">
             Copyright {CurrentYear}. All Rights Reserved
           </p>
         </div>

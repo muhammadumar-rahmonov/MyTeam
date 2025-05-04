@@ -3,7 +3,7 @@ import { ContactLeft, ContactRight, Ready } from "../components";
 
 const Contact = () => {
   return (
-    <main className="py-[120px] flex justify-between cbg-img  px-[165px]">
+    <main className="flex justify-between cbg-img  contact-section">
       <ContactRight />
       <ContactLeft />
     </main>
