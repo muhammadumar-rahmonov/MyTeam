@@ -259,8 +259,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Tablet Styles (760px–899px) */
-
 @media (min-width: 760px) and (max-width: 899px) {
   .responsive-header {
     padding: 2.5rem;
