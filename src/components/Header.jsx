@@ -27,7 +27,7 @@ const Header = () => {
 
       <button
         onClick={toggleSidebar}
-        className="mobile:block sidebar-toggle desktop:hidden tablet:hidden z-30"
+        className="mobile:block sidebar-toggle desktop:hidden tablet:hidden"
       >
         <BtnSVG />
       </button>

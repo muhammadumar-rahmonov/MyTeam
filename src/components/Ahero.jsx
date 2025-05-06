@@ -5,7 +5,7 @@ const Ahero = () => {
 
       <div className="about-p relative">
         <span className="w-12 h-1 absolute span -top-10 left-0 bg-[#f67e7e]"></span>
-        <p className="font-semibold text-lg">
+        <p className="livvic-semibold  text-lg">
           We help companies build dynamic teams made up of top global talent.
           Using our network of passionate professionals we drive innovation and
           deliver incredible outcomes. Talented, diverse teams shape the best
