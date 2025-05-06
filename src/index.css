@@ -1,10 +1,14 @@
 @import "https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap";
 @import "tailwindcss";
 
+.container {
+  max-width: 1690px;
+  margin: 0 auto;
+}
 .bg-img {
   background-image: url("./assets/Group 8.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: calc(100% - 0px) bottom;
 }
 @media (max-width: 770px) {
   .bg-img {
@@ -15,7 +19,7 @@
 }
 .bg-img1 {
   background: url("./assets/bg-img 1.svg"), url("./assets/Group 7.svg");
-  background-position: center left -110px, right bottom;
+  background-position: calc(50% - 768px), calc(100% - 300px) bottom;
   background-repeat: no-repeat, no-repeat;
 }
 @media (max-width: 770px) {
@@ -27,12 +31,12 @@
 }
 .dbg-img {
   background: url("./assets/Group 8 Copy.svg"), url("./assets/Group 8 (1).svg");
-  background-position: left top, right bottom;
+  background-position: left calc(100% - 570px), calc(100% - 0px) bottom;
   background-repeat: no-repeat, no-repeat;
 }
 .fbg-img {
   background-image: url("./assets/Group 8 (5).svg");
-  background-position: left bottom -100px;
+  background-position: left calc(100% + 100px);
   background-repeat: no-repeat;
 }
 .abg-img {
@@ -147,25 +151,10 @@
   max-width: 100%;
 }
 
-.delivering-content {
-  max-width: 1110px;
-}
-
-.ul {
-  gap: 30px;
-  justify-content: space-between;
-  max-width: 1110px;
-}
-
-.ul-p {
-  margin-bottom: 24px;
-}
-
 .ready-section {
   padding: 76px 260px;
 }
-
-.ready-content {
+*/ .ready-content {
   justify-content: space-between;
   align-items: center;
 }
@@ -225,13 +214,13 @@
 
 .meet-ul {
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 11px;
+  column-gap: 30px;
   row-gap: 48px;
+  place-content: center;
 }
 
 .meet-li {
   padding: 32px 24px;
-  max-width: 350px;
 }
 
 .clients-section {

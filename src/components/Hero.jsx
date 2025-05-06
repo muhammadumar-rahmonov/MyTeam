@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className=" bg-img1 hero-section ">
+    <section className=" bg-img1 hero-section  ">
       <div className="content flex">
         <h1 className=" responsive-h1 livvic-bold">
           Find the best <span className=" text-[#f67e7e]">talent</span>

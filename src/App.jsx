@@ -4,7 +4,7 @@ import { Footer, Header } from "./components";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
