@@ -37,18 +37,18 @@
 }
 .abg-img {
   background-image: url("./assets/Group 8 (6).svg");
-  background-position: right -100px bottom -100px;
+  background-position: right -100px bottom;
   background-repeat: no-repeat;
 }
 .mbg-img {
   background-image: url("./assets/Group 8 (7).svg"),
     url("./assets/Group 8 Copy (1).svg");
-  background-position: left -100px top -100px, right bottom;
+  background-position: left -100px top, right bottom;
   background-repeat: no-repeat;
 }
 .sbg-img {
   background-image: url("./assets/clients-bg.svg");
-  background-position: left -100px top -100px;
+  background-position: left top;
   background-repeat: no-repeat;
 }
 .cbg-img {
@@ -656,6 +656,22 @@ body {
   .cbg-img {
     background-image: url("./assets/Group 7 (1).svg");
     background-position: right -100px bottom -100px;
+    background-repeat: no-repeat;
+  }
+  .abg-img {
+    background-image: url("./assets/Group 8 (6).svg");
+    background-position: right -100px bottom -100px;
+    background-repeat: no-repeat;
+  }
+  .mbg-img {
+    background-image: url("./assets/Group 8 (7).svg"),
+      url("./assets/Group 8 Copy (1).svg");
+    background-position: left -100px top -100px, right bottom;
+    background-repeat: no-repeat;
+  }
+  .sbg-img {
+    background-image: url("./assets/clients-bg.svg");
+    background-position: left -100px top -100px;
     background-repeat: no-repeat;
   }
 }
