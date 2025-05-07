@@ -7,13 +7,13 @@ const Delivering = () => {
     <section className="bg-[#004047] dbg-img delivering-section relative">
       <div className="delivering-content">
         <div className="flex flex-col items-center">
-          <h2 className="livvic-bold responsive-h2 ">
+          <h2 className="livvic-bold text-center  responsive-h2 ">
             Delivering real results for top <br /> companies. Some of our
             <span className="text-[#79c8c7] "> success stories.</span>
           </h2>
         </div>
 
-        <ul className="ul flex">
+        <ul className="deliver-ul flex">
           {customObj2.map((val) => (
             <li key={val.id} className="text-center flex-1">
               <p className="livvic-semibold ul-p relative z-1 text-base">
