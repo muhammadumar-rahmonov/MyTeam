@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Ready = () => {
   return (
-    <section className="bg-[#F67E7E] fbg-img ready-section ">
+    <section className="bg-[#F67E7E] fbg-img ready-section w-full">
       <div className="  ready-content flex items-center justify-between">
         <h2 className="livvic-bold ready-h2 text-[#012F34]">
           Ready to get started?

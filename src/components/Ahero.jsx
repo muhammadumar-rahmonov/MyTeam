@@ -1,6 +1,6 @@
 const Ahero = () => {
   return (
-    <section className="abg-img about-section flex items-center justify-between relative">
+    <section className="abg-img about-section flex items-center justify-between relative w-full">
       <h1 className="livvic-bold about-h1 text-center text-6xl">About</h1>
 
       <div className="about-p relative">

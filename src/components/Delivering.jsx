@@ -4,7 +4,7 @@ import { MyTeamContext } from "../Context";
 const Delivering = () => {
   const { customObj2 } = useContext(MyTeamContext);
   return (
-    <section className="bg-[#004047] dbg-img delivering-section relative">
+    <section className="bg-[#004047] dbg-img delivering-section relative size-full">
       <div className="delivering-content">
         <div className="flex flex-col items-center">
           <h2 className="livvic-bold text-center  responsive-h2 ">

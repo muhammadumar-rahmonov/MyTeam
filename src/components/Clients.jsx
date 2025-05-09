@@ -4,7 +4,7 @@ import { MyTeamContext } from "../Context";
 const Clients = () => {
   const { TextSVGs } = useContext(MyTeamContext);
   return (
-    <section className="bg-[#012F34] py-[140px] clients-section sbg-img px-[165px]">
+    <section className="bg-[#012F34] py-[140px] clients-section sbg-img px-[165px] w-full">
       <h2 className="livvic-bold text-center clients-h2  mb-16 text-5xl">
         Some of our clients
       </h2>
